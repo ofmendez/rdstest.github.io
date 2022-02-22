@@ -2,6 +2,11 @@ html {
     font-size: 62.5%; /* =10px */
     margin: 0;
   }
+
+*{
+    box-sizing: border-box;
+}
+          
 body{
     /* background-image:url("/img/fondo.png"); */
     background : linear-gradient(rgba(0, 0, 0, 0.57),rgba(0, 0, 0, 0.57)),
@@ -10,105 +15,265 @@ body{
     background-attachment: fixed;
     background-position: center;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 .container{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
-}
-.left{
+    margin-top: 30px;
     width: 100%;
+    flex-direction: row;
     
 }
-.rigth{
-    color: #fff;
-    width: 100%;
+
+/*-----------left--------------*/
+ .left{
+        width: 100%;
+        margin-left: 50px; 
 }
-.container-top{
-    margin: 0;
-}
+
+   
 .logo{
-    width: 200px;
+    width: 150px;
     height: auto;
+    margin-bottom: -10px;
 }
 .slogan{
     color: #fff;
-    margin-top: 5px;
+    margin: 0px;
     font-size: 1.8rem;
 }
-ul{
+.li-txt2-small{
+    font-size:11px;
+}
+.ul-left{
     list-style: none;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #fff;
-    position: absolute;
-    bottom: 60px;
-    padding: 0;
+    padding:0px;
+    padding-right: 30px;
 }
-ul li:nth-child(2n){
-    margin-bottom:10px;
+
+.li-left{
+   padding-bottom: 5px;
 }
-.text-footer{
-    text-align: left;
-    font-size: 1.7rem;
-    position: absolute;
-    bottom: 0px;
+
+
+/*-----------right--------------*/
+
+.right{
+    color: #fff;
+    width: 100%;
+    margin-right: 50px;
+    
+    
 }
 
 .container-description{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 2rem;
-}
-.container-description p{
-    width: 90%;
-}
-.subtitle{
-    font-size: 3.5rem;
-    margin: 0rem;
     width: 100%;
+    font-size: 1.7rem;
 }
-@media(min-width:600px){
-    .container{
-        flex-direction: row;
-    }
-    .left{
-        width: 30%;
-        margin-left: 50px;
-    }
-    .rigth{
-        color: #fff;
-        width: 70%;
-        margin-right: 100px;
-    }
-    .container-top{
-        height:50vh;
-        margin: 0;
-    }
-    .logo{
-        width: 150px;
-        height: auto;
-    }
-    .container-bottom{
-        height:50vh;
-    }
-    .container-description{
-        height:80vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: end;
-        text-align:right;
-        font-size: 2.2rem;
-    }
-    ul li:nth-child(2n){
-        margin-bottom:15px;
-    }
-    .text-footer{
-        text-align: left;
-        font-size: 1.7rem;
-        position: absolute;
-        bottom: 50px;
-    }
+h1{
+    margin-top: 0;
+   font-weight: 600;
+   font-size: 2.8rem;
+}
+.div-flecha{
+    text-align: center;
+    margin-top: -15px;
+}
+.flecha{
+    width: 20px;
+    padding: 5px;
+    background:#CCD1D1;
+    border-radius: 50px;
+}
+.flecha:hover{
+     background:#7F8C8D;
+}
+.divDesplegable{
+   
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s linear;
+}
+
+.mostrar{
+    height: 250px;
+}
+
+.text-footer{
+     width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.7rem;
+    position: absolute;
+    bottom: 15px;
+}
+
+
+
+/*---------------------------@media 1225px-----------------------*/
+
+@media(max-width:1225px){
+
+/*-----------left--------------*/
+ .left{
+        margin-left: 40px; 
+}
+.slogan{
+    font-size: 1.6rem;
+}   
+.li-txt2-small{
+    font-size:10px;
+}
+.ul-left{
+    font-size: 1.4rem;
+}
+
+/*-----------right--------------*/
+
+.right{
+    margin-right: 40px;
+}
+.container-description{
+    font-size: 1.5rem;
+}   
+h1{
+   font-size: 2.5rem;
+}   
+.div-flecha{
+    margin-top: -10px;
+}   
+.flecha{
+    width: 20px;  
+}
+.text-footer{
+    font-size: 1.7rem;
+    bottom: 15px;
+}
+}
+
+
+/*---------------------------@media 1024px-----------------------*/
+@media(max-width:1024px){ 
+/*-----------left--------------*/
+ .left{
+    width: 70%;
+    margin-left: 20px;             
+}
+.logo{
+    width: 120px;   
+}
+.slogan{
+    font-size: 1.7rem;
+}
+.li-txt2-small{
+    font-size:11px;
+}
+.ul-left{
+    font-size: 1.5rem;   
+}
+
+/*-----------right--------------*/
+
+.right{
+    margin-right: 20px;    
+}
+
+.container-description{
+    font-size: 1.5rem;
+}
+h1{
+   font-size: 2.1rem;
+}
+.div-flecha{
+    margin-top: -10px;
+}
+
+.text-footer{
+    font-size: 1.5rem;
+    bottom: 5px;
+}
+}
+
+
+/*---------------------------@media 550px-----------------------*/
+@media(max-width:550px){
+  .container{
+    display: flex;
+    flex-direction: column;   
+    width: 100%;
     
 }
+
+/*-----------left--------------*/
+ .left{
+    width: 100%;
+    margin-left: 0px;   
+    padding-left: 10px; 
+    padding-right: 10px;      
+}
+.logo{
+    width: 100px;
+}
+.slogan{
+    font-size: 1.5rem;
+}
+.li-txt2-small{
+    font-size:10px;
+}
+.ul-left{
+    font-size: 1.3rem;
+    
+}
+/*-----------right--------------*/
+
+.right{
+    padding-left: 10px;     
+    padding-right: 10px;   
+}
+
+.container-description{
+    font-size: 1.3rem;
+}
+h1{
+   font-size: 1.6rem;
+}
+.div-flecha{
+    margin-top: -10px;
+}
+      
+.text-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4rem;
+    padding-right: 10px;
+    padding-left: 10px;
+}  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
