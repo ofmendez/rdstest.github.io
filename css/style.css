@@ -46,11 +46,11 @@ body{
     font-size: 1.8rem;
 }
 .li-txt2-small{
-    font-size:11px;
+    font-size:12px;
 }
 .ul-left{
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #fff;
     padding:0px;
     padding-right: 30px;
@@ -66,9 +66,7 @@ body{
 .right{
     color: #fff;
     width: 100%;
-    margin-right: 50px;
-    
-    
+    margin-right: 50px;  
 }
 
 .container-description{
@@ -76,43 +74,29 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    
+    
 }
 h1{
     margin-top: 0;
    font-weight: 600;
-   font-size: 2.8rem;
+   font-size: 3.5rem;
 }
-.div-flecha{
-    text-align: center;
-    margin-top: -15px;
+h2{
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 1.8rem;
 }
-.flecha{
-    width: 20px;
-    padding: 5px;
-    background:#CCD1D1;
-    border-radius: 50px;
-}
-.flecha:hover{
-     background:#7F8C8D;
-}
-.divDesplegable{
-   
-    width: 100%;
-    height: 0px;
-    overflow: hidden;
-    transition: height 0.3s linear;
-}
-
-.mostrar{
-    height: 250px;
+.seg-div-des{
+    margin-left: -25px;
 }
 
 .text-footer{
-     width: 100%;
+    width: 100%;
     text-align: center;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     position: absolute;
     bottom: 15px;
 }
@@ -128,13 +112,13 @@ h1{
         margin-left: 40px; 
 }
 .slogan{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }   
 .li-txt2-small{
-    font-size:10px;
+    font-size:11px;
 }
 .ul-left{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 /*-----------right--------------*/
@@ -146,16 +130,14 @@ h1{
     font-size: 1.5rem;
 }   
 h1{
-   font-size: 2.5rem;
+   font-size: 3.3rem;
 }   
 .div-flecha{
     margin-top: -10px;
 }   
-.flecha{
-    width: 20px;  
-}
+
 .text-footer{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     bottom: 15px;
 }
 }
@@ -191,14 +173,64 @@ h1{
     font-size: 1.5rem;
 }
 h1{
-   font-size: 2.1rem;
+   font-size: 3.0rem;
 }
+h2{
+    font-size: 1.7rem;    
+    }
 .div-flecha{
     margin-top: -10px;
 }
 
 .text-footer{
     font-size: 1.5rem;
+    bottom: 5px;
+}
+}
+
+
+
+/*---------------------------@media 768px-----------------------*/
+@media(max-width:768px){ 
+/*-----------left--------------*/
+ .left{
+    width: 70%;
+    margin-left: 20px;             
+}
+.logo{
+    width: 120px;   
+}
+.slogan{
+    font-size: 1.6rem;
+}
+.li-txt2-small{
+    font-size:10px;
+}
+.ul-left{
+    font-size: 1.3rem;   
+}
+
+/*-----------right--------------*/
+
+.right{
+    margin-right: 20px;    
+}
+
+.container-description{
+    font-size: 1.3rem;
+}
+h1{
+   font-size: 2.2rem;
+}
+h2{
+    font-size: 1.6rem;    
+    }
+.div-flecha{
+    margin-top: -10px;
+}
+
+.text-footer{
+    font-size: 1.3rem;
     bottom: 5px;
 }
 }
@@ -224,14 +256,13 @@ h1{
     width: 100px;
 }
 .slogan{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .li-txt2-small{
     font-size:10px;
 }
 .ul-left{
-    font-size: 1.3rem;
-    
+    font-size: 1.2rem;        
 }
 /*-----------right--------------*/
 
@@ -241,13 +272,17 @@ h1{
 }
 
 .container-description{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 h1{
    font-size: 1.6rem;
 }
-.div-flecha{
-    margin-top: -10px;
+h2{
+     font-size: 1.4rem;  
+    font-weight: 600;
+    }
+.seg-div-des{
+    margin-left: -25px;
 }
       
 .text-footer{
@@ -255,7 +290,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding-right: 10px;
     padding-left: 10px;
 }  
